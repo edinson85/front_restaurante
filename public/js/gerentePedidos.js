@@ -36,12 +36,12 @@ $(document).ready(function(){
 					'<td>'+recibido+'</td>' +
 					'<td>'+data.created_at+'</td>' +
 				'</tr>';
-				$("table").append(row);
+				$('table tr:eq(1)').before(row);
 				$('#spinnerModal').modal('hide');
 			},
 			error: function(xhr, status, error) {
 				$('#spinnerModal').modal('hide');
-				alert("No fue posible procesar su petición");
+				alert(xhr.responseJSON.message);
 			}
 		});
     });
@@ -91,6 +91,6 @@ function cargarDatosPedidos() {
 		$('#spinnerModal').modal('hide');
 	}).fail(function(xhr, status, error) {
 		$('#spinnerModal').modal('hide');
-		alert("No fue posible procesar su petición");
+		alert(xhr.responseJSON.message);
 	});
 }

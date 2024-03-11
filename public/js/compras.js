@@ -31,6 +31,6 @@ function cargarCompras() {
 			$('#spinnerModal').modal('hide');
 		}).fail(function(xhr, status, error) {
 			$('#spinnerModal').modal('hide');
-			alert("No fue posible procesar su petición");
+			alert(xhr.responseJSON.message);
 		});
 }
