@@ -1,6 +1,6 @@
-var urlGerente = "http://192.168.20.23:86/";
-var urlCocina = "http://192.168.20.23:87/";
-var urlBodega = "http://192.168.20.23:88/";
+var urlGerente = "http://18.119.118.98:8082/";
+var urlCocina = "http://18.119.118.98:8084/";
+var urlBodega = "http://18.119.118.98:8086/";
 function getUrlGerente(){
     return urlGerente;
 }
