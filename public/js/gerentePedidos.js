@@ -47,10 +47,7 @@ $(document).ready(function(){
 		};
 		xhr.onerror = function () {
 			$('#spinnerModal').modal('hide');
-			alert('Debes deshabilitar la conexión segura. Da clic en aceptar y te redirigiremos a la pagina de inicio para que conozcas como hacerlo');
-			setTimeout(function() {
-				window.location.href = "https://edinson85.github.io/front_restaurante/index.html";
-			}, 500);
+			alert('Debes deshabilitar la conexión segura. Ve a la pagina de inicio donde te indicamos como hacerlo');
 		};
 		xhr.send();
     });
@@ -109,10 +106,7 @@ function cargarDatosPedidos() {
 	};
 	xhr.onerror = function () {
 		$('#spinnerModal').modal('hide');
-		alert('Debes deshabilitar la conexión segura. Da clic en aceptar y te redirigiremos a la pagina de inicio para que conozcas como hacerlo');
-		setTimeout(function() {
-			window.location.href = "https://edinson85.github.io/front_restaurante/index.html";
-		}, 500);
+		alert('Debes deshabilitar la conexión segura. Ve a la pagina de inicio donde te indicamos como hacerlo');
 	};
 	xhr.send();
 }
