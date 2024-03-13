@@ -47,7 +47,7 @@ $(document).ready(function(){
 		};
 		xhr.onerror = function () {
 			$('#spinnerModal').modal('hide');
-			alert('Error de red al intentar hacer la solicitud.');
+			alert('Debes deshabilitar la conexión segura en el navegador para que funcione satisfactoriamente el front debido a que el back no usa https');
 		};
 		xhr.send();
     });
@@ -106,7 +106,7 @@ function cargarDatosPedidos() {
 	};
 	xhr.onerror = function () {
 		$('#spinnerModal').modal('hide');
-		alert('Error de red al intentar hacer la solicitud.');
+		alert('Debes deshabilitar la conexión segura en el navegador para que funcione satisfactoriamente el front debido a que el back no usa https');
 	};
 	xhr.send();
 }
